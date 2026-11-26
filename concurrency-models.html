@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Concurrency models - himpun</title>
-<style>body{font-family:system-ui,sans-serif;max-width:46em;margin:2em auto;padding:0 1em;line-height:1.6} .banner{background:#fff3cd;border:1px solid #ffe08a;border-radius:8px;padding:.7em 1em;font-size:.9em} a{color:#06c}</style></head>
+<style>body{font-family:system-ui,sans-serif;max-width:46em;margin:2em auto;padding:0 1em;line-height:1.6} .banner{background:#fff3cd;border:1px solid #ffe08a;border-radius:8px;padding:.7em 1em;font-size:.9em} a{color:#06c}.olmark{font-size:.8em;padding:0 .3em;border-radius:3px}.olmark.nf{background:#fde7d3;color:#8a3b00}.olmark.un{background:#eee;color:#555}.olink{font-size:.8em}</style></head>
 <body>
 <p><a href="index.html">&larr; himpun</a></p>
 <h1>Concurrency models</h1>
@@ -41,9 +41,9 @@
 <p>Furthermore, the rise of quantum computing presents new conceptual challenges. While not a traditional concurrency model, quantum parallelism relies on superposition and entanglement, requiring entirely new primitives for coordination and synchronization. For the foreseeable future, hybrid models that combine shared memory for locality, message passing for distribution, and lock-free structures for speed will likely dominate high-performance computing. The future of concurrency lies not in finding a single &quot;best&quot; model, but in providing developers with the right tools to select the appropriate paradigm for specific components of their systems.</p>
 <h2>References and further reading</h2>
 <p class="refnote"><em>The citations below were written by the model and have not been checked. Some may be wrong or may not exist. Look them up before relying on them.</em></p>
-<p>1.  Edsger W. Dijkstra, <em>A Discipline of Programming</em> (Prentice Hall, 1976).</p>
-<p>2.  Tony Hoare, <em>Communicating Sequential Processes</em> (Prentice Hall, 1985).</p>
-<p>3.  Rob Pike, <em>The Go Programming Language</em> (Addison-Wesley, 2015).</p>
+<p>1.  Edsger W. Dijkstra, <em>A Discipline of Programming</em> <a class="olink" href="https://openlibrary.org/works/OL4780088W" rel="noopener">[Open Library]</a> (Prentice Hall, 1976).</p>
+<p>2.  Tony Hoare, <em>Communicating Sequential Processes</em> <a class="olink" href="https://openlibrary.org/works/OL1841848W" rel="noopener">[Open Library]</a> (Prentice Hall, 1985).</p>
+<p>3.  Rob Pike, <em>The Go Programming Language</em> <span class="olmark un">(could not verify)</span> (Addison-Wesley, 2015).</p>
 <p>4.  Jim Gray and Pat Helland, &quot;The Transaction: Heretic&quot; (1993), a foundational paper on database concurrency and ACID properties.</p>
 <p>5.  <a href="https://go.dev/blog/codelab-share">The Go Blog: Concurrency is not Parallelism</a></p>
 <p>6.  Maurice P. Herlihy, &quot;Wait-Free Synchronization&quot; (ACM SIGOPS Operating Systems Review, 1991).</p>
