@@ -60,7 +60,7 @@
 <h2>Replication, Sharding, and Consensus</h2>
 <p>As data volume and user base grow beyond the capacity of a single machine, databases must employ distributed strategies to scale.</p>
 <p>### Replication</p>
-<p>Replication involves copying data from one database (the primary) to one or more other databases (replicas). This provides redundancy and improves read availability.</p>
+<p>Replication keeps extra copies of a database: one primary server sends its data on to one or several replica servers. This provides redundancy and improves read availability.</p>
 <li>  <strong>Synchronous Replication:</strong> The primary waits for an acknowledgment from the replica before acknowledging the write to the client. This ensures zero data loss but increases write latency.</li>
 <li>  <strong>Asynchronous Replication:</strong> The primary acknowledges the write immediately and sends the data to the replica in the background. This offers lower latency but risks data loss if the primary fails before the replica catches up.</li>
 <p>### Sharding</p>
