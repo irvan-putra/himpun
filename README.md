@@ -15,7 +15,7 @@ Live wiki: https://vanipy.com/himpun/
 Earth (42), Everyday (25), Fiction (16), Food (11), Geography (11), Health (7),
 History (31), Indonesia (44), Mathematics (13), Restart Civilization (26),
 Science (47), Society (9), Space (12), Sports (8), Technology (13).
-The Fiction category holds the Fracture Lines serial (8 chapters, 3 character
+The Fiction category holds the Splinterwake serial (8 chapters, 3 character
 pages, 3 faction pages, world rules, series guide) - all invented.
 Every article passed a second AI review-and-expand pass for 50 of the 181
 wave-2 articles so far; the rest are first-pass drafts.
