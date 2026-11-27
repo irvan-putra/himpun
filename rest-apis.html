@@ -30,8 +30,8 @@
 <li>  <strong>PUT:</strong> Used to update or create a resource at a specific URI. It is idempotent.</li>
 <li>  <strong>DELETE:</strong> Used to remove a resource. It is idempotent.</li>
 <li>  <strong>PATCH:</strong> Used to partially update a resource.</li>
-<p>In a RESTful API, the URI identifies the resource (e.g., `/users/123`), and the HTTP method identifies the action (e.g., `GET /users/123` retrieves the user, `DELETE /users/123` removes them). This contrasts with procedural API design, where the URI might include actions (e.g., `/deleteUser/123`), which is considered non-RESTful because it violates the resource-oriented paradigm.</p>
-<p>Representations are typically exchanged in formats such as JSON (JavaScript Object Notation) or XML. JSON has become the de facto standard due to its human readability and native support in JavaScript, the language of the web. The Content-Type header in HTTP responses indicates the media type of the representation, such as `application/json` or `text/html`.</p>
+<p>In a RESTful API, the URI identifies the resource (e.g., <code>/users/123</code>), and the HTTP method identifies the action (e.g., <code>GET /users/123</code> retrieves the user, <code>DELETE /users/123</code> removes them). This contrasts with procedural API design, where the URI might include actions (e.g., <code>/deleteUser/123</code>), which is considered non-RESTful because it violates the resource-oriented paradigm.</p>
+<p>Representations are typically exchanged in formats such as JSON (JavaScript Object Notation) or XML. JSON has become the de facto standard due to its human readability and native support in JavaScript, the language of the web. The Content-Type header in HTTP responses indicates the media type of the representation, such as <code>application/json</code> or <code>text/html</code>.</p>
 <h2>Statelessness and Scalability</h2>
 <p>The statelessness constraint is often the most misunderstood aspect of REST. It does not mean the server cannot store data; it means the server does not store session state for the purpose of processing future requests. For example, if a user logs in, the server might issue a session token or use HTTP cookies. However, if the next request does not include that token or cookie, the server cannot assume the user is still logged in.</p>
 <p>This design choice has significant implications for scalability. In a stateful system, a load balancer must route subsequent requests from the same user to the same server instance that holds the session state. This &quot;sticky session&quot; requirement limits horizontal scalability. In a stateless REST API, any request can be handled by any server instance, allowing organizations to scale out by simply adding more servers to a cluster. This model is essential for handling the massive, unpredictable traffic loads seen on the modern web.</p>
@@ -53,9 +53,9 @@
 <li>  <strong>Twitter/X API:</strong> Provides endpoints for posting tweets, retrieving user timelines, and searching for tweets. It uses JSON and strict rate limiting.</li>
 <li>  <strong>Slack API:</strong> Allows third-party apps to integrate with Slack workspaces. It uses OAuth 2.0 for authentication and offers Webhooks for event-driven communication.</li>
 <li>  <strong>Stripe API:</strong> Used for payment processing, it is widely cited as an example of good API design. It uses clear error messages, comprehensive documentation, and predictable resource URIs.</li>
-<li>  <strong>GitHub REST API:</strong> Provides access to repositories, issues, and pull requests. It is versioned (e.g., `/v3/`) to allow for backward compatibility during breaking changes.</li>
+<li>  <strong>GitHub REST API:</strong> Provides access to repositories, issues, and pull requests. It is versioned (e.g., <code>/v3/</code>) to allow for backward compatibility during breaking changes.</li>
 <p>When implementing REST APIs, best practices include:</p>
-<li>  Using meaningful URI names (e.g., `/orders` rather than `/getOrders`).</li>
+<li>  Using meaningful URI names (e.g., <code>/orders</code> rather than <code>/getOrders</code>).</li>
 <li>  Using HTTP status codes correctly (200 for success, 4xx for client errors, 5xx for server errors).</li>
 <li>  Implementing pagination for large collections.</li>
 <li>  Using appropriate authentication mechanisms (OAuth 2.0, API keys, or JWTs).</li>

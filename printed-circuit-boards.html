@@ -25,18 +25,18 @@
 <p>Additional layers include the <strong>solder mask</strong>, a thin protective coating (typically green, but available in red, black, white, etc.) that prevents oxidation, short circuits, and mechanical abrasion. Materials include liquid photoimageable epoxies (LPI) or acrylics. The <strong>silkscreen</strong> (or legend) layer provides human-readable information such as component references, part numbers, and logo identification, applied using a non-conductive ink.</p>
 <h2>Manufacturing Processes</h2>
 <p>PCB manufacturing is a complex, multi-stage process that requires precision to ensure electrical reliability. The workflow generally follows these key steps:</p>
-<p>### 1. Imaging and Etching</p>
+<h3>1. Imaging and Etching</h3>
 <p>The process begins with a large sheet of copper-clad laminate. For single-sided boards, a photosensitive resist is applied. The circuit design is exposed to ultraviolet (UV) light through a film (or via direct laser imaging), which hardens the resist in the intended trace areas. The unhardened resist is washed away, leaving the copper protected only where traces are desired. The exposed copper is then etched away using a chemical solution (typically ammonium persulfate or ferric chloride), leaving the conductive pattern.</p>
-<p>### 2. Lamination for Multi-Layer Boards</p>
+<h3>2. Lamination for Multi-Layer Boards</h3>
 <p>Multi-layer boards are constructed by stacking inner layers (which have already been etched) with <strong>prepreg</strong> (uncured resin and fiberglass) and <strong>core</strong> (fully cured epoxy and fiberglass) materials. This stack is then subjected to high heat and pressure in a press, curing the resin and bonding the layers into a single rigid panel.</p>
-<p>### 3. Drilling and Plating</p>
+<h3>3. Drilling and Plating</h3>
 <p><strong>Drilling</strong> is critical for multi-layer boards. Computer-controlled CNC drills or lasers create holes for <strong>vias</strong> (inter-layer connections) and <strong>through-holes</strong> (component leads). In HDI boards, <strong>laser drilling</strong> is used to create microvias (often less than 0.15 mm in diameter) on the surface or within shallow depths. After drilling, the non-conductive walls of the holes must be made conductive. This is achieved through <strong>chemical copper deposition</strong> (electroless plating), where a thin layer of copper is deposited on the hole walls via a chemical reaction, followed by <strong>electroplating</strong> to build up the copper thickness for structural and electrical integrity.</p>
-<p>### 4. Surface Finishing</p>
+<h3>4. Surface Finishing</h3>
 <p>Before component assembly, the exposed copper pads must be protected from oxidation and prepared for soldering. Common finishes include:</p>
 <li>  <strong>Hot Air Solder Leveling (HASL):</strong> The board is dipped in molten solder and leveled with hot air. It is cost-effective but creates a uneven surface, less ideal for very fine-pitch components.</li>
 <li>  <strong>Electroless Nickel/Immersion Gold (ENIG):</strong> A layer of nickel is electrolessly deposited, followed by immersion gold. This provides a flat, solderable surface that resists oxidation, making it popular for BGA (Ball Grid Array) packages.</li>
 <li>  <strong>Organic Solderability Preservatives (OSP):</strong> A thin organic film is applied to protect copper. It is lead-free, environmentally friendly, and cost-effective, though it has a shorter shelf life than ENIG.</li>
-<p>### 5. Testing and Inspection</p>
+<h3>5. Testing and Inspection</h3>
 <p>Final boards undergo rigorous testing. <strong>Automated Optical Inspection (AOI)</strong> uses cameras to detect physical defects like missing components or solder bridges. <strong>Flying Probe Test</strong> or <strong>Bed of Nails Test</strong> verifies electrical connectivity and shorts/opens against the design database.</p>
 <h2>Signal Integrity and High-Frequency Design</h2>
 <p>As digital speeds increase into the gigahertz range, the PCB itself becomes a transmission line, and its physical properties significantly impact performance. In traditional low-speed designs, wires were treated as simple conductors. In high-speed designs, engineers must account for <strong>impedance control</strong>, <strong>crosstalk</strong>, and <strong>reflection</strong>.</p>
